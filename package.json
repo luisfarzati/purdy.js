@@ -1,10 +1,11 @@
 {
   "name": "purdy-browser",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Pretty print objects in real purdy colors. Allows clearer visualization of objects than you get from most pretty printers due to colors.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "lab -a code -t 100 -v -I Reflect -L"
+    "test": "lab -a code -t 100 -v -I Reflect -L",
+    "build": "babel src -d lib"
   },
   "homepage": "https://github.com/luisfarzati/purdy.js",
   "bugs": "https://github.com/luisfarzati/purdy.js/issues",
@@ -23,6 +24,8 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.6.0",
     "code": "1.x.x",
     "lab": "6.x.x"
   },
